@@ -1,0 +1,12 @@
+{
+  "navbar": {
+    "Home": "home",
+    "Sections": "sections",
+    "AboutAcademy": "about academy",
+    "Membership": "membership",
+    "Credence": "credence",
+    "JoinUs": "join us",
+    "RequestAConsultation": "request a consultation",
+    "CertificateVerification": "certificate verification"
+  }
+}
