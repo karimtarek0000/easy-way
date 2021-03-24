@@ -4,7 +4,7 @@
     <div
       :class="['toggler__burger', { 'toggler__burger--active': toggleNavbar }]"
     >
-      <span v-for="index of 5" :key="index" style="background-color: black" />
+      <span v-for="index of 5" :key="index" />
     </div>
   </div>
 </template>
@@ -44,7 +44,7 @@ export default {
   overflow: hidden;
 
   // Responsive
-  @media (max-width: 992px) {
+  @media (max-width: 66.875em) {
     display: flex;
   }
   // 1) - Burger
@@ -64,6 +64,7 @@ export default {
       opacity: 1;
       transition: opacity 0.6s ease-in-out;
       will-change: right, transform;
+      background-color: #03608e;
 
       // 1)
       &:nth-of-type(1) {

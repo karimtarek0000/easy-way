@@ -1,17 +1,31 @@
 <template>
-  <button>{{ text }}</button>
+  <router-link
+    :to="$i18nRoute({ name: namePage })"
+    v-slot="{ navigate }"
+    custom
+  >
+    <button @click="navigate">{{ text }}</button>
+  </router-link>
 </template>
 
 <script>
 export default {
   name: "BtnPrimary",
-  props: ["text"],
+  props: {
+    text: {
+      type: String,
+      default: "click",
+    },
+    namePage: {
+      type: String,
+      required: true,
+    },
+  },
 };
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 button {
-  border: 0;
-  cursor: pointer;
+  @extend %btn;
 }
 </style>

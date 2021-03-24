@@ -1,0 +1,21 @@
+%btn {
+  text-align: center;
+  border-radius: 200px;
+  color: map-get($themes, second);
+  transition: background-color 0.5s;
+  font-family: inherit;
+  display: block;
+  border: 0;
+  cursor: pointer;
+
+  //
+  &:focus {
+    outline: none;
+  }
+
+  //
+  @media (max-width: 66.875em) {
+    margin: 0;
+    font-size: 2rem !important;
+  }
+}

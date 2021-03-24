@@ -50,6 +50,11 @@ export default {
     background-color: transparent;
     overflow: hidden;
     height: calc(100vh - #{$height-navbar});
+
+    //
+    @media (max-width: 66.875em) {
+      height: calc(100vh - 120px);
+    }
   }
 
   //
@@ -68,19 +73,27 @@ export default {
   &__info {
     text-align: center;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
     position: absolute;
     color: map-get($themes, second);
     text-transform: capitalize;
     z-index: 10;
     user-select: none;
 
+    //
+    @include BreakPoint("tablet-l") {
+      width: 100%;
+    }
+
     p {
       @include addFontSize(map-get($font-size, 23));
     }
 
     h1 {
+      font-weight: 400;
       @include addFontSize(map-get($font-size, 35));
     }
   }
@@ -95,16 +108,23 @@ export default {
   right: 10%;
   list-style: none;
   padding: 0;
+
+  //
+  @include BreakPoint("tablet-l") {
+    top: auto;
+    transform: translateY(0);
+    bottom: 10px;
+  }
+
   //
   li {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15px;
-    height: 15px;
     margin-bottom: 10px;
     transform: scale(0.7);
     transition: transform 0.5s ease;
+
     //
     button {
       width: 15px;
@@ -116,13 +136,10 @@ export default {
       border: 0;
       cursor: pointer;
 
+      //
       &:focus {
         outline: none;
       }
-    }
-
-    &:not(:last-child) {
-      margin-right: 10px;
     }
   }
 

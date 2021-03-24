@@ -1,7 +1,17 @@
+// 1) - Font - Tajawal
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@800&display=swap");
+
+// 2) - Font - DINNext
 @font-face {
   font-family: "DINNext";
   src: url(~@/assets/fonts/din-next/Bold.ttf);
   font-weight: 500;
+}
+
+@font-face {
+  font-family: "DINNext";
+  src: url(~@/assets/fonts/din-next/medium.ttf);
+  font-weight: 400;
 }
 
 @font-face {

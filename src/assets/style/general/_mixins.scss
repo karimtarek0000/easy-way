@@ -2,3 +2,42 @@
   font-size: $size;
   line-height: #{$size * 1.5};
 }
+
+// Add color
+@mixin addTheme($type, $color) {
+  #{$type}: map-get($themes, $color);
+}
+
+// Break point manger
+@mixin BreakPoint($point) {
+  //
+  @if $point == "phone" {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+  //
+  @if $point == "tablet-p" {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+  //
+  @if $point == "tablet-l" {
+    @media only screen and (max-width: 62em) {
+      @content;
+    }
+  }
+  //
+  @if $point == "desktop" {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+  //
+  @if $point == "other" {
+    @media only screen and (min-width: 76em) {
+      @content;
+    }
+  }
+}

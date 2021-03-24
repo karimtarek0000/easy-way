@@ -8,5 +8,18 @@
     "JoinUs": "انضم الينا",
     "RequestAConsultation": "طلب استشاره",
     "CertificateVerification": "التحقق من الشهادات"
+  },
+  "counter": {
+    "day": "يوم",
+    "hour": "ساعة",
+    "minut": "دقيقة",
+    "second": "ثانية"
+  },
+  "buttons": {
+    "joinUs": "انضم الينا",
+    "register": "تسجيل"
+  },
+  "nameSections": {
+    "services": "خدمتنا"
   }
 }

@@ -51,7 +51,6 @@ button {
   text-align: center;
   padding: 0;
   text-transform: uppercase;
-  margin-inline-start: 10px;
   cursor: pointer;
 
   &:focus {

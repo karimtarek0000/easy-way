@@ -2,11 +2,27 @@
   <main>
     <!-- Header -->
     <Header :data="dataSlider" />
+    <!-- Counter -->
+    <TimeRegister>
+      <!--  -->
+      <Counter deadline="05/20/2021" />
+      <!--  -->
+      <BtnPrimary
+        namePage="Sections"
+        class="join"
+        :text="$t('buttons.joinUs')"
+      />
+    </TimeRegister>
+    <!-- Services -->
+    <Services />
   </main>
 </template>
 
 <script>
 import Header from "@/components/layout/Header";
+import TimeRegister from "@/components/TimeRegister";
+import Counter from "@/components/Counter";
+import Services from "@/components/sections/Services";
 //
 export default {
   name: "Home",
@@ -36,8 +52,27 @@ export default {
   },
   components: {
     Header,
+    TimeRegister,
+    Counter,
+    Services,
   },
 };
 </script>
 
-<style></style>
+<style lang="scss" scoped>
+//
+.join {
+  background-color: map-get($themes, eighth);
+  width: 20.3rem;
+  height: 5.9rem;
+  @include addFontSize(map-get($font-size, 16));
+  margin: 5rem auto;
+
+  //
+  @media (hover: hover) {
+    &:hover {
+      background-color: rgba(map-get($themes, eighth), 0.9);
+    }
+  }
+}
+</style>

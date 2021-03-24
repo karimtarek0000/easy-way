@@ -8,5 +8,18 @@
     "JoinUs": "join us",
     "RequestAConsultation": "request a consultation",
     "CertificateVerification": "certificate verification"
+  },
+  "counter": {
+    "day": "day",
+    "hour": "hour",
+    "minut": "minutes",
+    "second": "second"
+  },
+  "buttons": {
+    "joinUs": "join us",
+    "register": "register"
+  },
+  "nameSections": {
+    "services": "services"
   }
 }

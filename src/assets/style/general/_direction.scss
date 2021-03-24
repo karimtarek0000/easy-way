@@ -1,0 +1,19 @@
+html[dir="rtl"] {
+  //
+  .counter__wrapper:not(:last-child)::after {
+    left: -23px;
+    right: auto;
+  }
+
+  //
+  .navbar__items {
+    @media (max-width: 66.875em) {
+      left: auto;
+      right: -50%;
+    }
+
+    &--active {
+      right: 0;
+    }
+  }
+}
