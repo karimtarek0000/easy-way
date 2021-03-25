@@ -9,22 +9,25 @@
     <div>
       <slot />
     </div>
-    <!-- Icon whatsapp -->
-    <a href="https://wa.me/000000000000" class="whatsapp" target="_blank">
-      <div>
-        <GSvg nameIcon="Whatsapp" title="Whatsapp" />
-      </div>
-    </a>
+
+    <!--  -->
+    <WhatsApp />
   </section>
 </template>
 
 <script>
+import WhatsApp from "@/components/WhatsApp";
+//
 export default {
   name: "TimeRegister",
+  components: {
+    WhatsApp,
+  },
 };
 </script>
 
 <style lang="scss" scoped>
+//
 .time-register {
   position: relative;
   background-color: map-get($themes, seventh);
@@ -57,36 +60,6 @@ export default {
       font-weight: 300;
       margin-top: 2rem;
     }
-  }
-}
-
-.whatsapp {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: -40px;
-  left: 20vw;
-  width: 77px;
-  height: 77px;
-  background-color: rgba(map-get($themes, first), 0.3);
-  border-radius: 50%;
-
-  div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 85%;
-    height: 85%;
-    @include addTheme("background-color", first);
-    border-radius: inherit;
-  }
-
-  //
-  svg {
-    fill: white;
-    width: 40px;
-    height: 40px;
   }
 }
 </style>

@@ -244,13 +244,13 @@ export default {
         margin: 0 1rem;
 
         //
-        @media (max-width: 535px) {
+        @include BreakPoint("phone") {
           margin: 1rem 0;
         }
       }
 
       //
-      @media (max-width: 535px) {
+      @include BreakPoint("phone") {
         width: 100%;
       }
 

@@ -60,7 +60,7 @@ export default {
     }
 
     p {
-      @include addFontSize(map-get($font-size, 16));
+      @include addFontSize(map-get($font-size, 20));
       @include addTheme("color", sixth);
       margin-top: 1rem;
       font-weight: 300;

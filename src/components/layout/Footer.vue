@@ -130,6 +130,7 @@ export default {
 </script>
 
 <style lang="scss">
+//
 .footer {
   @include addTheme("background-color", second);
   margin-top: 100px;
@@ -155,6 +156,7 @@ export default {
     @include BreakPoint("tablet-p") {
       > * {
         flex-basis: calc(98% / 2);
+        margin-bottom: 2rem;
       }
     }
 
@@ -169,6 +171,10 @@ export default {
       @include addTheme("color", fifth);
       @include addFontSize(map-get($font-size, 24));
       margin-bottom: 3.2rem;
+
+      @include BreakPoint("tablet-l") {
+        margin-bottom: 0.5rem;
+      }
     }
 
     a {

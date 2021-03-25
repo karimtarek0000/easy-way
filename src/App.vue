@@ -89,7 +89,7 @@ html {
   }
 
   @include BreakPoint("tablet-l") {
-    font-size: 50%; // 8px
+    font-size: 53.125%; // 8px
   }
 }
 

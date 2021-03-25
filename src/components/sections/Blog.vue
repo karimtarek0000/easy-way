@@ -38,7 +38,7 @@ export default {
   @include addTheme("background-color", second);
 
   //
-  &__subtitle {
+  p {
     @include addTheme("color", sixth);
     @include addFontSize(map-get($font-size, 30));
   }

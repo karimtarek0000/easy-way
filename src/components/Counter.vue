@@ -76,6 +76,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+//
 .counter {
   display: flex;
   justify-content: center;
@@ -92,6 +93,7 @@ export default {
     border-radius: 1.8rem;
     @include addTheme("background-color", second);
     min-width: 11.3rem;
+    width: 11.3rem;
 
     //
     @media (max-width: 28.125em) {
