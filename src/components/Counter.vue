@@ -96,7 +96,7 @@ export default {
     width: 11.3rem;
 
     //
-    @media (max-width: 28.125em) {
+    @media (max-width: 32.875em) {
       width: 10rem;
       min-width: 5rem;
     }
