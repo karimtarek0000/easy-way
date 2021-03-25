@@ -150,6 +150,12 @@ export default {
       font-size: 2rem;
       transition: all 0.6s ease-in-out;
       will-change: all;
+
+      //
+      @media (max-width: 23.125em) {
+        width: 70%;
+        left: -70%;
+      }
     }
 
     //

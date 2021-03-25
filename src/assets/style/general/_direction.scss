@@ -12,6 +12,10 @@ html[dir="rtl"] {
       right: -50%;
     }
 
+    @media (max-width: 23.125em) {
+      right: -70%;
+    }
+
     &--active {
       right: 0;
     }

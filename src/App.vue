@@ -14,11 +14,14 @@
     <Navbar :links="navbarItems" />
     <!--  -->
     <router-view />
+    <!--  -->
+    <Footer />
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 import ChangeLang from "@/components/ChangeLang";
 //
 export default {
@@ -64,6 +67,7 @@ export default {
   components: {
     Navbar,
     ChangeLang,
+    Footer,
   },
 };
 </script>
@@ -83,18 +87,16 @@ html {
   @include BreakPoint("desktop") {
     font-size: 56.25%; // 9px
   }
+
   @include BreakPoint("tablet-l") {
     font-size: 50%; // 8px
   }
-  @include BreakPoint("tablet-p") {
-    font-size: 43.75%; // 7px
-  }
 }
 
+//
 body {
   font-family: DINNext;
   box-sizing: border-box;
-  height: 10000px;
   overflow-x: hidden;
 }
 
@@ -111,8 +113,18 @@ body {
   justify-content: space-between;
   padding: 1rem;
 
+  //
   @media (min-width: 66.875em) {
     display: none;
   }
+}
+
+//
+h1,
+h2,
+h3,
+h4,
+h5 {
+  user-select: none;
 }
 </style>

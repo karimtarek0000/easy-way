@@ -21,5 +21,11 @@
   },
   "nameSections": {
     "services": "services"
+  },
+  "navbarCategorySelected": {
+    "all": "all",
+    "beginner": "beginner",
+    "intermated": "intermated",
+    "advanced": "advanced"
   }
 }

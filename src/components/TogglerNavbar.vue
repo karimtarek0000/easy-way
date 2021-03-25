@@ -47,6 +47,7 @@ export default {
   @media (max-width: 66.875em) {
     display: flex;
   }
+
   // 1) - Burger
   &__burger {
     position: relative;

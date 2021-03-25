@@ -21,5 +21,11 @@
   },
   "nameSections": {
     "services": "خدمتنا"
+  },
+  "navbarCategorySelected": {
+    "all": "الكل",
+    "beginner": "مستوي مبتدئ",
+    "intermated": "مستوي متوسط",
+    "advanced": "مستوي متقدم"
   }
 }

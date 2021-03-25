@@ -160,6 +160,14 @@ export default {
       }
     }
 
+    &:nth-of-type(3) {
+      .services__info__features {
+        p {
+          @include addTheme("color", tenth);
+        }
+      }
+    }
+
     //
     &__image {
       width: 100%;
@@ -208,7 +216,6 @@ export default {
       //
       img {
         width: 53vw;
-        height: 100%;
       }
     }
 

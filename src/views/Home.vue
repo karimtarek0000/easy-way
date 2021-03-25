@@ -15,6 +15,22 @@
     </TimeRegister>
     <!-- Services -->
     <Services />
+    <!--  -->
+    <Category />
+    <!--  -->
+    <OtherCourses />
+    <!--  -->
+    <Videos />
+    <!--  -->
+    <Courses />
+    <!--  -->
+    <Banar />
+    <!--  -->
+    <Blog />
+    <!--  -->
+    <Testimonials />
+    <!--  -->
+    <Customars />
   </main>
 </template>
 
@@ -23,6 +39,14 @@ import Header from "@/components/layout/Header";
 import TimeRegister from "@/components/TimeRegister";
 import Counter from "@/components/Counter";
 import Services from "@/components/sections/Services";
+import Category from "@/components/sections/Category";
+import OtherCourses from "@/components/sections/OtherCourses";
+import Courses from "@/components/sections/Courses";
+import Videos from "@/components/sections/Videos";
+import Banar from "@/components/sections/Banar";
+import Testimonials from "@/components/sections/Testimonials";
+import Customars from "@/components/sections/Customars";
+import Blog from "@/components/sections/Blog";
 //
 export default {
   name: "Home",
@@ -55,6 +79,14 @@ export default {
     TimeRegister,
     Counter,
     Services,
+    Category,
+    OtherCourses,
+    Courses,
+    Videos,
+    Banar,
+    Testimonials,
+    Customars,
+    Blog,
   },
 };
 </script>
