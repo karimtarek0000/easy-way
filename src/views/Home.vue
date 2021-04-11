@@ -55,21 +55,21 @@ export default {
       dataSlider: [
         {
           id: 1,
-          linkImg: "https://i.postimg.cc/52VG4NtS/image-min.png",
+          linkImg: "https://i.ibb.co/mH6X22Y/image-min.png",
         },
         {
           id: 2,
           linkImg:
-            "https://i.postimg.cc/vTHQ4LXb/neonbrand-z-FSo6bn-ZJTw-unsplash.jpg",
+            "https://i.ibb.co/PzmCmCk/neonbrand-z-FSo6bn-ZJTw-unsplash.jpg",
         },
         {
           id: 3,
-          linkImg: "https://i.postimg.cc/52VG4NtS/image-min.png",
+          linkImg: "https://i.ibb.co/mH6X22Y/image-min.png",
         },
         {
           id: 4,
           linkImg:
-            "https://i.postimg.cc/vTHQ4LXb/neonbrand-z-FSo6bn-ZJTw-unsplash.jpg",
+            "https://i.ibb.co/PzmCmCk/neonbrand-z-FSo6bn-ZJTw-unsplash.jpg",
         },
       ],
     };
